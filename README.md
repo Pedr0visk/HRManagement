@@ -1,4 +1,10 @@
-# Sistema de gerenciamento de recursos humanos
+# Sistema de gerenciamento de recursos humanos (SaaS)
+- Departamentos
+- Empregado
+- Usuários
+- Documentos
+- Empresa
+- Registro Hora/Extra
 
 # Tecnologias empregadas
 
