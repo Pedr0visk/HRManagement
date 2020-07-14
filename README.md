@@ -13,3 +13,10 @@
 # ----- RNF (Requisitos não Funcionais)
 
 # ----- RN (Regras de Negócio)
+
+
+# Snippets
+
+> pmm - python manage.py makemigrations
+> pm - python manage.py migrate
+> prs - python manage.py runserver
