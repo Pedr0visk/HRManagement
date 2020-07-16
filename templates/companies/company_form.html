@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="row py-5">
+    <div class="col-sm">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,6 +1,23 @@
 {% extends 'base.html' %}
 
 {% block main %}
-Seja Bem vindo Pedro Belloto
-<a href="/accounts/logout">Sair</a>
+<div class="row py-4 align-items-center">
+    <div class="col-sm">
+        One of three columns
+    </div>
+    <div class="col-sm">
+        Olá funcionário {{ user.employer.name}}
+        <a href="{% url 'list_employers' %}" class="btn btn-primary">Gerenciar Funcionários</a>
+    </div>
+    <div class="col-sm">
+        {% if user.employer.company %}
+        <a href="{% url 'edit_company' user.employer.company.id %}" class="btn btn-success">Editar Empresa</a>
+        {% else %}
+        <a href="" class="btn btn-success">Criar Empresa</a>
+        {% endif %}
+    </div>
+    <div class="col-sm">
+        <a href="{% url 'logout' %}">Sair</a>
+    </div>
+</div>
 {% endblock %}
