@@ -1,4 +1,10 @@
 {
+  "python.pythonPath": "env/bin/python",
   "python.linting.enabled": true,
-  "editor.tabSize": 4
+  "window.zoomLevel": 0.5,
+  "editor.fontSize": 13,
+  "editor.tabSize": 2,
+  "[python]": {
+    "editor.formatOnSave": false
+  }
 }

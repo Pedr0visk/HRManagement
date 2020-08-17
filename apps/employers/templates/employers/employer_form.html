@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h2>Editar de Funcionário</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="btn btn-success">Salvar</button>
+</form>
+
+<a href="{% url 'create_document' user.employer.id %}" class="btn btn-info">Adicionar Documento</a>
+
+<div class="py-4">
+    <ul>
+        {% for document in employer.document_set.all %}
+        <li><a href="{{ document.file.url }}" target="_blank">{{ document.description }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
